@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Buyer Account | Basket Chain</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <a href="c:\Users\Owner\Desktop\BASKET CHAIN SOURCE DATA\agro-landing-page\index.html" class="btn-home">
+                <i class="fas fa-arrow-left"></i> Home
+            </a>
+            <div class="brand-name">Basket Chain</div>
+            <div class="header-spacer"></div>
+        </header>
+
+        <main class="main-content">
+            <div class="container">
+                <!-- Left Side: Form -->
+                <div class="form-section">
+                    <div class="form-card">
+                        <h1>Create <span>Buyer Account</span></h1>
+                        <p class="subtitle">Join our Marketplace and source quality produce directly from Verified Farmers</p>
+
+                        <form id="signupForm">
+                            <div class="form-group">
+                                <label for="fullName">Full Name / Business Name</label>
+                                <input type="text" id="fullName" placeholder="Enter your name or business name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="yourname/company@mail.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+234 800 000 0000" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company/Organization (Optional)</label>
+                                <input type="text" id="company" placeholder="Your company name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <div class="select-wrapper">
+                                    <select id="location" required>
+                                        <option value="" disabled selected>Select your country</option>
+                                        <option value="nigeria">Nigeria</option>
+                                        <option value="ghana">Ghana</option>
+                                        <option value="kenya">Kenya</option>
+                                        <option value="south-africa">South Africa</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="Min 8 characters" required minlength="8">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" placeholder="Re-enter previous password" required>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="terms" required>
+                                <label for="terms">I agree to the <span>Terms of Service & Privacy Policy</span></label>
+                            </div>
+
+                            <button type="submit" class="btn-submit">Create Account</button>
+
+                            <p class="login-link">Already have an account? <a href="c:\Users\Owner\Desktop\BASKET CHAIN SOURCE DATA\agro-landing-page\assets\agro-signup-page\agro-login-page\index.html">Log in</a></p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Side: Image & Testimonial -->
+                <div class="visual-section">
+                    <div class="image-container">
+                        <div class="img-placeholder">
+                            <img src="./assets/images/image-removebg-preview 1.png" alt="#dashboard-image" style="width: 100%; height: 100%;">
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>“Finding quality suppliers has never been easier!”</blockquote>
+                        <cite>Richmond R.</cite>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <h2>Account Created!</h2>
+            <p>Welcome to Basket Chain. Your buyer account has been successfully created.</p>
+            <button id="closeModal">Continue to Dashboard</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

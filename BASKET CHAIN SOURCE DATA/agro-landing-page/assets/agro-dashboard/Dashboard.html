@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Chain - Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <div class="menu-item active"> 
+                    <i class="fas fa-th-large"></i> 
+                    <span class="menu-label">Dashboard</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="menu-label">Browse Marketplace</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span class="menu-label">My Requests</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-heart"></i>
+                    <span class="menu-label">Wishlist</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-comment-alt"></i>
+                    <span class="menu-label">Messages</span>
+                </div>
+                <div class="divider"></div>
+                <div class="menu-item">
+                    <i class="fas fa-cog"></i>
+                    <span class="menu-label">Settings</span>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span class="menu-label">Help</span>
+                </div>
+            </div>
+            <div class="logout-section">
+                <div class="menu-item logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="menu-label">Logout</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="logo">Basket Chain</div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search products, farmers, location...">
+                </div>
+                <div class="header-actions">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-bell"></i>
+                    <div class="user-profile" id="userProfile">
+                        <span id="userInitials">RH</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h1 id="welcomeMessage">Welcome back, Richmond!</h1>
+                <p>Here's what's happening with your marketplace activity</p>
+            </section>
+
+            <!-- Stats Cards -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon green-bg"><i class="far fa-file-alt"></i></div>
+                    <div class="stat-info">
+                        <p>Active Requests</p>
+                        <div class="stat-value">
+                            <span>05</span>
+                            <span class="trend positive">+3 <i class="fas fa-chart-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green-bg"><i class="fas fa-check"></i></div>
+                    <div class="stat-info">
+                        <p>Completed Orders</p>
+                        <div class="stat-value">
+                            <span>21</span>
+                            <span class="trend positive">+6 <i class="fas fa-chart-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green-bg"><i class="far fa-heart"></i></div>
+                    <div class="stat-info">
+                        <p>Saved Products</p>
+                        <div class="stat-value">
+                            <span>03</span>
+                            <span class="trend negative">-2 <i class="fas fa-chart-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green-bg"><i class="fas fa-box"></i></div>
+                    <div class="stat-info">
+                        <p>New This Week</p>
+                        <div class="stat-value">
+                            <span>45</span>
+                            <span class="trend positive">+10 <i class="fas fa-chart-line"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="featured-products">
+                <div class="section-header">
+                    <h2>Featured Products</h2>
+                    <a href="#" class="view-all">View all Products <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">
+                            <img src="Frame 85.png" alt="Savas" style="width:100%; height:100%; object-fit:cover;">
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h3>Pretty Savas</h3>
+                            <div class="farm-info">
+                                <img src="" alt="farm">
+                                <span>Jake's Farm • Abuja</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₦24,000/20kg</span>
+                                <span class="availability">650kg Available</span>
+                            </div>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">
+                             <img src="Frame 85 (1).png" alt="Savas" style="width:100%; height:100%; object-fit:cover;">
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h3>Tomato Jos</h3>
+                            <div class="farm-info">
+                                <img src="https://via.placeholder.com/20" alt="farm">
+                                <span>John's Farm • Lagos</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₦50,000/140kg</span>
+                                <span class="availability">650kg Available</span>
+                            </div>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image-placeholder">
+                             <img src="Frame 85 (2).png" alt="Savas" style="width:100%; height:100%; object-fit:cover;">
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <div class="product-details">
+                            <h3>Senkes Rice</h3>
+                            <div class="farm-info">
+                                <img src="https://via.placeholder.com/20" alt="farm">
+                                <span>John's Farm • Lagos</span>
+                            </div>
+                            <div class="price-info">
+                                <span class="price">₦70,000/Bag</span>
+                                <span class="availability">650kg Available</span>
+                            </div>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="recent-activity">
+                <div class="section-header">
+                    <h2>Recent Activity</h2>
+                    <a href="#" class="view-all">View all Activity <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon check"><i class="fas fa-check"></i></div>
+                        <div class="activity-text">
+                            <p>Your request for Cassava was accepted by Farmer John</p>
+                            <span class="time">2 hrs ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon paper-plane"><i class="far fa-paper-plane"></i></div>
+                        <div class="activity-text">
+                            <p>You sent a request for Tomato Jos to Farmer Jeckerson</p>
+                            <span class="time">3 hrs ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon paper-plane"><i class="far fa-paper-plane"></i></div>
+                        <div class="activity-text">
+                            <p>You sent a request for Senkes Rice to Farmer Jumbo</p>
+                            <span class="time">3 hrs ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="BA.js"></script>
+</body>
+</html>
